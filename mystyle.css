@@ -109,7 +109,7 @@ nav {
 
 .content {
   padding: auto;
-  height: 2500px; /* wajib */
+  height: 2500px;
   background-color: #ffff;
 }
 
@@ -141,7 +141,6 @@ nav {
 
 .card {
   display: flex;
-  flex-wrap: wrap;
   margin: 10px 35px;
   justify-content: center;
 }
