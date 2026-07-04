@@ -141,6 +141,7 @@ nav {
 
 .card {
   display: flex;
+  flex-direction: column;
   margin: 10px auto;
   justify-content: center;
 }
