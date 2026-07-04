@@ -266,6 +266,7 @@ nav {
     flex-direction: column;
     flex-wrap: wrap;
     margin: 10px auto;
+    padding: 10px 5px;
   }
 
   .card .drink-card {
