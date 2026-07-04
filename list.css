@@ -267,11 +267,7 @@ nav {
     flex-wrap: wrap;
     margin: 10px auto;
     padding: 10px 5px;
-  }
-
-  .card .drink-card {
-    font-size: 15px;
-    margin-left: -40px;
+    align-item: center;
   }
 
   .card img {
