@@ -280,6 +280,7 @@ nav {
   .footer ul a {
     font-size: 15px;
     margin: 10px 0px;
+    padding: 0 5px;
   }
 
   .nav-links {
