@@ -63,7 +63,7 @@
         </p>
 
         <div class="card">
-          <div class="card-cont">
+          <div class="card-cont reveal reveal-right">
             <img
               src="https://png.pngtree.com/background/20250122/original/pngtree-takoyaki-japanese-most-popular-local-famous-street-food-of-osaka-japan-picture-image_15628790.jpg"
               width="100%"
@@ -75,7 +75,7 @@
             <a href=""><button class="button-hot">Order Here</button></a>
           </div>
 
-          <div class="card-cont">
+          <div class="card-cont reveal reveal-right">
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoU1dCzuKS9V8NaEm6ocY403MsBYkKvKmjTSFiGz7XRlGS3XesccRurXk&s=10"
               width="100%"
@@ -87,7 +87,7 @@
             <a href=""><button class="button-hot">Order Here</button></a>
           </div>
 
-          <div class="card-cont">
+          <div class="card-cont reveal reveal-right">
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqZpaGLpieMH_PruBkqlI34huEXY84Gtqbukx7rgQG_g&s=10"
               width="100%"
@@ -154,6 +154,23 @@
         navLinks.classList.toggle("active");
         hamburger.classList.toggle("active");
       });
+
+      /**Reveal**/
+      const reveals = document.querySelectorAll(".reveal");
+
+      function scrollReveal() {
+        for (let i = 0; i < reveals.length; i++) {
+          let windowHeight = window.innerHeight;
+          let elementTop = reveals[i].getBoundingClientRect().top;
+          let revealPoint = 100; // muncul pas 100px sebelum masuk layar
+
+          if (elementTop < windowHeight - revealPoint) {
+            reveals[i].classList.add("active");
+          }
+        }
+      }
+      window.addEventListener("scroll", scrollReveal);
+      scrollReveal();
     </script>
   </body>
 </html>
