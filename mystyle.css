@@ -289,7 +289,7 @@ nav {
   }
 
   .footer ul a {
-    font-size: 20px;
+    font-size: 15px;
     margin: 10px 0px;
   }
 
@@ -328,7 +328,21 @@ nav {
   }
 
   .logo {
-    margin: 8px 12px 8px 180px;
+    margin: 8px 12px 8px 30px;
     padding: 10px 20px;
   }
+}
+
+.reveal {
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal-right {
+  transform: translateX(60px);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateX(0) translateY(0); /* balik ke tengah */
 }
